@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--  Error boundary. If our wrapped component threw an error, display it. -->
-    <div v-if="componentError != ''">
+    <div v-if="componentError !== ''">
       <h1 class="err__title">Component Error</h1>
       <div class="err__msg">Message: {{ componentError }}</div>
     </div>
@@ -13,6 +13,7 @@
     <slot
       v-else-if="renderData != null"
       :args="renderData.args"
+      :theme="renderData.theme"
       :disabled="renderData.disabled"
     ></slot>
   </div>

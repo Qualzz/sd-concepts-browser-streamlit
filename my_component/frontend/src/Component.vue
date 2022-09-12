@@ -12,7 +12,7 @@ import { useStreamlit } from "./streamlit"
 
 export default {
   name: "component",
-  props: ['args'], // Arguments passed from Python
+  props: ['args', 'theme', 'disabled'], // Arguments passed from Python
   setup () {
     useStreamlit(); // lifecycle hooks for automatic Streamlit resize
 

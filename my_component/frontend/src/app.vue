@@ -4,8 +4,8 @@
   You should not have to edit this, but are free to do so :)
 -->
 <template>
-  <WithStreamlitConnection v-slot="{ args }">
-    <Component :args="args" />
+  <WithStreamlitConnection v-slot="{ args, theme, disabled }">
+    <Component :theme="theme" :disabled="disabled" />
   </WithStreamlitConnection>
 </template>
 
