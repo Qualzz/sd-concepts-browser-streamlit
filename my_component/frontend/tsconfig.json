@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist",
-    "declaration": true,
+    "declaration": false,
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",

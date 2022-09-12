@@ -11,13 +11,14 @@
   "scripts": {
     "clean:dist": "rimraf dist",
     "dev": "vite --mode dev",
-    "build": "yarn clean:dist && vite build --mode prod && vue-tsc --emitDeclarationOnly",
+    "build": "yarn clean:dist && vite build --mode prod",
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "peerDependencies": {
-    "vue": ">=3.0.0"
+  "dependencies": {
+    "vue": "^3.2.38",
+    "streamlit-component-lib": "^1.4.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.18.9",
@@ -27,7 +28,7 @@
     "rimraf": "^3.0.2",
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
-    "vue": "^3.2.31",
+    "vue": "^3.2.38",
     "vue-tsc": "^0.29.8"
   }
 }
