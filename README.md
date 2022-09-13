@@ -39,6 +39,12 @@ $ streamlit run my_component/__init__.py
 - Modify the Python code at `my_component/__init__.py`.
 - Feel free to rename the `my_component` folder, `Component.vue` file with its import in `app.vue`, and package name in `setup.py` and `package.json`.
 
+When you're ready to publish the component run
+```
+$ yarn run build
+```
+And change `_RELEASE` to True in `__init__.py`
+
 ## Resources
 
 - [Higher Order Components in Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
