@@ -5,31 +5,26 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { ref } from "vue"
-import { Streamlit } from "streamlit-component-lib"
+import { Streamlit, Theme } from "streamlit-component-lib"
 import { useStreamlit } from "./streamlit"
 
-export default {
-  name: "component",
-  props: ['args', 'theme', 'disabled'], // Arguments passed from Python
-  setup () {
-    useStreamlit(); // lifecycle hooks for automatic Streamlit resize
+interface IProps {
+  args: any;
+  disabled: boolean;
+  theme: Theme;
+}
 
-    const numClicks = ref(0)
-    const onClicked = () => {
-      numClicks.value++
-      Streamlit.setComponentValue(numClicks.value)
-    }
+useStreamlit(); // lifecycle hooks for automatic Streamlit resize
+const props = defineProps<IProps>();
 
-    return {
-      numClicks,
-      onClicked,
-    }
-  }
+const numClicks = ref(0)
+const onClicked = () => {
+  numClicks.value++
+  Streamlit.setComponentValue(numClicks.value)
 }
 </script>
-
 <style scoped>
   p { margin-block: 0 20px;}
 </style>

@@ -5,7 +5,7 @@
 -->
 <template>
   <WithStreamlitConnection v-slot="{ args, theme, disabled }">
-    <Component :theme="theme" :disabled="disabled" />
+    <Component :args="args" :theme="theme" :disabled="disabled" />
   </WithStreamlitConnection>
 </template>
 
