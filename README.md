@@ -39,11 +39,19 @@ $ streamlit run my_component/__init__.py
 - Modify the Python code at `my_component/__init__.py`.
 - Feel free to rename the `my_component` folder, `Component.vue` file with its import in `app.vue`, and package name in `setup.py` and `package.json`.
 
-When you're ready to publish the component run
+## Publish
+
+When you're ready to publish the component:
+- Rename your `my_component` folder to the name of your component if you haven't done so yet
+- Pass your component's name in `declare_component` in `__init__.py`
+- Change `_RELEASE` to True in `__init__.py`
+- Edit `MANIFEST.in`, change the path for recursive-include from `package/frontend/dist *` to `<component name>/frontend/dist *`
+- Edit `setup.py` and provide the relevant info about your component
+- Run from your `frontend` folder
 ```
 $ yarn run build
 ```
-And change `_RELEASE` to True in `__init__.py`
+The component is ready to be published. You can follow the tutorials available online on how to build a wheel and publish it to PyPI or it can now be installed directly from github (in which case don't forget to include `frontend/dist` folder in your repo).
 
 ## Resources
 
