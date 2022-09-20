@@ -1,11 +1,11 @@
 import setuptools
 
 setuptools.setup(
-    name="streamlit-component-vue",
+    name="sd-concept-browser",
     version="0.1.0",
-    author="",
-    author_email="",
-    description="",
+    author="Samir Lerognon",
+    author_email="qualzz20@gmail.com",
+    description="Concepts browser for Stable Diffusion Web UI",
     long_description="",
     long_description_content_type="text/plain",
     url="",
