@@ -1,11 +1,11 @@
 import setuptools
 
 setuptools.setup(
-    name="sd-concept-browser",
+    name="sd_webui_st_concept_browser",
     version="0.1.0",
     author="Samir Lerognon",
     author_email="qualzz20@gmail.com",
-    description="Concepts browser for Stable Diffusion Web UI",
+    description="Streamlit component for concepts browsing in stable-diffusion-webui",
     long_description="",
     long_description_content_type="text/plain",
     url="",
