@@ -39,8 +39,9 @@ def sdConceptsBrowser(concepts, key=None):
 	return component_value
 
 def getConceptsFromPath(page, conceptPerPage, searchText= ""):
-	# get the path where the concepts are stored
-	path = os.path.join(os.getcwd(), "./models")
+	# get the path where the concepts are stored ->  "./../models/custom/sd-concepts-library"
+	path = os.path.abspath(__file__ + "../../../../../models/custom/sd-concepts-library")
+
 	acceptedExtensions = ('jpeg', 'jpg', "png")
 	concepts = []
 
@@ -81,7 +82,7 @@ def getConceptsFromPath(page, conceptPerPage, searchText= ""):
 
 				# Maintain the aspect ratio (max 200x200)
 				resizedImage = originalImage.copy()
-				resizedImage.thumbnail((200, 200), Image.ANTIALIAS)
+				resizedImage.thumbnail((260, 260), Image.ANTIALIAS)
 
 				#concept["images"].append(resizedImage)
 
