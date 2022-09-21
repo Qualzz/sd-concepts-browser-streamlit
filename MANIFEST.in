@@ -1,1 +1,1 @@
-sd-concepts-browser/frontend/dist *
+recursive-include sd-concepts-browser/frontend/dist *
