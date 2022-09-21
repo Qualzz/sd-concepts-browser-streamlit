@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="sd_webui_st_concept_browser",
+    name="sd_concept_browser ",
     version="0.1.0",
     author="Samir Lerognon",
     author_email="qualzz20@gmail.com",

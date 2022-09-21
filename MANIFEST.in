@@ -1,1 +1,1 @@
-recursive-include sd_webui_st_concept_browser/frontend/dist *
+recursive-include sd_concept_browser /frontend/dist *
